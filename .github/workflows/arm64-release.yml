@@ -11,7 +11,10 @@ on:
 jobs:
   pull_and_package:
     runs-on: ubuntu-22.04
+    permissions:
+      contents: write
     steps:
+    
       - name: Checkout repository
         uses: actions/checkout@v4
 
